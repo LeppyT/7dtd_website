@@ -1,0 +1,143 @@
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    min-height : 100vh;
+    gap: 0px 0px;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: rgb(73, 14, 14);
+}
+
+header
+{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 5px solid black;
+    grid-column: span 7;
+    background-color: whitesmoke;
+    gap: 8px;
+}
+
+#logo
+{
+    height: 100%;
+    width: 100%;
+    grid-column: span 1;
+}
+
+h1
+{
+    height: 97%;
+    margin: 0;
+    grid-column: span 4;
+    border-radius: 10px;
+    font-size: 40px;
+    background-color: black;
+    color:rgb(114, 114, 219);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+#call
+{
+    height: 97%;
+    grid-column: span 2;
+    border-radius: 10px;
+    font-size: 40px;
+    background-color: black;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+}
+
+main
+{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: span 5;
+}
+
+#gameplay
+{
+    width: 100%;
+    grid-column: span 6;
+}
+
+.main_grid_fill
+{
+    grid-column: span 6;
+}
+
+.p_title
+{
+    border-radius: 15px;
+    color:antiquewhite;
+    background-color: black;
+}
+
+.p_body
+{
+    border: 5px solid black;
+    border-radius: 10px;
+    color:antiquewhite;
+    background-color: darkslategray;
+}
+
+aside
+{
+    height: 100%;
+    background-color: darkolivegreen;
+    grid-column: span 2;
+}
+
+footer
+{
+    background-color: indigo;
+    grid-column: span 7;
+}
+
+li
+{
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    main
+    {
+        grid-column: span 7;
+    }
+    aside
+    {
+        grid-column: span 7;
+    }
+    h1
+    {
+        font-size: 23px;
+    }
+    #call
+    {
+        font-size: 15px;
+    }
+    #gameplay
+    {
+       height: 30%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #gameplay
+    {
+       height: 70%;
+    }
+}
